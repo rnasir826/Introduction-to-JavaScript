@@ -14,10 +14,12 @@ if (votingAge >= 18) {
 
 let game = win {
     if (game !== win);
-    console.log(looser);
-} else(game === win) {
-    console.log(winner);
+    console.log(looser)
+} else {
+    (game === win)
+    console.log(winner)
 }
+
 
 
 
@@ -150,18 +152,19 @@ function dogFeeder(weight, age) {
         /************************************************************** Task 5 **************************************************************/
         //Metric Converter
         //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-        var km = parseInt(prompt("Please enter kilometers:"));
-        var miles = km / 1.6;
-        console.log(miles + " Miles");
 
-
+        function milageConverter(miles, kilometers) {
+            let miles = 1
+            miles = math.floor(kilometers * 0.621371())
+        }
 
 
         //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
 
-        var feet = parseInt(prompt("Please enter feet:"));
-        var cm = feet / 30.48;
-        console.log(cm + " Centimeter ");
+        function feetConverter(inches, centimeters) {
+            let inches = 1
+            inches = math.floor(centimeters * 0.621371())
+        }
 
 
 
@@ -170,11 +173,11 @@ function dogFeeder(weight, age) {
         // create a function called annoyingSong
         // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
         let annoyingSong = StartingNum => {
-            for (let i = StartingNum; i > 0; i--) {
-                console.log("startingNum");
+            for (let i = 99; i > 0; i--) {
+                console.log(i);
             }
         }
-        annoyingSong(16);
+
 
 
 
@@ -186,27 +189,31 @@ function dogFeeder(weight, age) {
         //70s should be Cs 
         //60s should be D 
         //and anything below 60 should be F
-        let marks = 100; {
-            if (marks >= 90);
-            return A;
-        }
-        let B = 80;
-        let C = 70;
-        let D = 60;
-        else let = F;
+        function assignments(schoolGrades) {
+            if (90 <= schoolGrades) {
+                console.log('A');
+            } else if (80 <= schoolGrades <= 90) {
+                console.log('B');
+            } else if (70 <= schoolGrades <= 80) {
+                console.log('C');
+            } else if (60 <= schoolGrades <= 70) {
+                console.log('D');
+            } else {
+                console.log('F');
+            }
 
 
 
 
-        /************************************************************** Stretch **************************************************************/
-        //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
-        // Hint - you may need to study tomorrow's traning kit on arrays 
-        // try looking up the .includes() method
+            /************************************************************** Stretch **************************************************************/
+            //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
+            // Hint - you may need to study tomorrow's traning kit on arrays 
+            // try looking up the .includes() method
 
 
 
 
 
-        /************************************************************** Stretch **************************************************************/
-        //Take Rock, Paper, Sissors further
-        //update your rock papers sissors code below to take a prompt from a user using the window object
+            /************************************************************** Stretch **************************************************************/
+            //Take Rock, Paper, Sissors further
+            //update your rock papers sissors code below to take a prompt from a user using the window object
